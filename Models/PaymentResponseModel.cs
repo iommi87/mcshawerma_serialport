@@ -22,8 +22,5 @@ namespace McShawermaSerialPort.Models
 
         [JsonPropertyName("raw_data")]
         public string RawData { get; set; }
-
-        [JsonPropertyName("receipts")]
-        public List<string> Receipts { get; set; }
     }
 }

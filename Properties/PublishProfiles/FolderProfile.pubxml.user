@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\mcshawerma_serialport\bin\Release\net5.0\publish\</_PublishTargetUrl>
+    <History>True|2021-10-24T19:37:55.4973925Z;True|2021-10-24T23:37:27.3853755+04:00;True|2021-10-24T23:13:22.2519591+04:00;True|2021-10-23T21:11:30.7024572+04:00;True|2021-10-23T18:38:04.2694428+04:00;True|2021-10-23T18:37:52.6023828+04:00;True|2021-10-23T18:37:17.8673437+04:00;True|2021-10-23T18:36:36.1914668+04:00;True|2021-10-23T18:36:26.1038766+04:00;</History>
+  </PropertyGroup>
+</Project>

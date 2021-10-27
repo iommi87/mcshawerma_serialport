@@ -1,0 +1,15 @@
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\mcshawerma_serialport.exe
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\appsettings.json
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\mcshawerma_serialport.dll
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\mcshawerma_serialport.deps.json
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\mcshawerma_serialport.runtimeconfig.json
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\mcshawerma_serialport.pdb
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\Interop.ActiveXConnect64Lib.dll
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\System.IO.Ports.dll
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\runtimes\linux\lib\netstandard2.0\System.IO.Ports.dll
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\runtimes\osx\lib\netstandard2.0\System.IO.Ports.dll
+C:\mcshawerma_serialport\obj\Release\net5.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.IO.Ports.dll

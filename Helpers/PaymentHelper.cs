@@ -20,7 +20,6 @@ namespace McShawermaSerialPort.Helpers
                     StatusId = Convert.ToInt32(res.isAuthorized()),
                     StatusMessage = res.ErrorText,
                     Rrn = res.RRN,
-                    Receipts = Transaction.Receipts,
                     AuthorizationCode = res.AuthCode,
                     ResponseCodeHost = resp_cd_hst
                 };

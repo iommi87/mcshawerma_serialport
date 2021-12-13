@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.Json.Serialization;
 
 namespace McShawermaSerialPort.Models
@@ -20,7 +22,28 @@ namespace McShawermaSerialPort.Models
         [JsonPropertyName("rfn")]
         public string Rrn { get; set; }
 
+
+        [JsonPropertyName("receipts")]
+        public List<string> Receipts { get; set; }
+
         [JsonPropertyName("raw_data")]
-        public string RawData { get; set; }
+        public string RawData
+        {
+            get
+            {
+                if (Receipts != null && Receipts.Any())
+                    return Receipts.ElementAt(0);
+                else
+                {
+                    if (string.IsNullOrEmpty(RawData))
+                        return null;
+                    string[] answer_data = RawData.Split(new string[] { "0xDF^^", "0xDA^^", "0x4F^^", "0x95^^", "0xDD^^", "0xDE^^" }, StringSplitOptions.RemoveEmptyEntries);
+                    string result = "";
+                    if (RawData.Contains("0xDF^^"))
+                        result = answer_data.ElementAt(0).Trim('~');
+                    return result;
+                }
+            }
+        }
     }
 }

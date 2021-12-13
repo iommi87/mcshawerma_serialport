@@ -38,11 +38,18 @@ namespace McShawermaSerialPort.CashPrintTypes
 
         public DaisyTech(string portname)
         {
-            m_ComPort = new SerialPort(portname, 9600, Parity.None, 8, StopBits.One)
+            try
             {
-                ReadTimeout = 500,
-                WriteTimeout = 500
-            };
+                m_ComPort = new SerialPort(portname, 9600, Parity.None, 8, StopBits.One)
+                {
+                    ReadTimeout = 500,
+                    WriteTimeout = 500
+                };
+            }
+            catch(Exception ex)
+            {
+                ErrorCOM = ex.Message;
+            }
             m_queue = new Queue<byte>();
         }
 
@@ -242,6 +249,11 @@ namespace McShawermaSerialPort.CashPrintTypes
 
         public bool ExecuteCommand(PrintCashDeviceType type, decimal total)
         {
+            if(m_ComPort == null)
+            {
+                return false;
+            }
+
             ErrorCOM = string.Empty;
             string data_string = null;
             try

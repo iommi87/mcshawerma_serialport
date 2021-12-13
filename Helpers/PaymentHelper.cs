@@ -21,6 +21,7 @@ namespace McShawermaSerialPort.Helpers
                     StatusMessage = res.ErrorText,
                     Rrn = res.RRN,
                     AuthorizationCode = res.AuthCode,
+                    Receipts = Transaction.Receipts,
                     ResponseCodeHost = resp_cd_hst
                 };
             }

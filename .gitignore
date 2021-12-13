@@ -12,4 +12,5 @@ bin
 *.njsproj
 *.sln
 *.sw*
+.vs\
 /images/*

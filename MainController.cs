@@ -45,5 +45,27 @@ namespace McShawermaSerialPort
                 Exception = res.Value
             });
         }
+
+        [HttpPost("print_x_bill")]
+        public IActionResult PrintXBill(PrintCashParamModel request)
+        {
+            var res = _printCashHelper.PrintXReport(request);
+            return Ok(new PrintCashResponseModel
+            {
+                Status = res.Key,
+                Exception = res.Value
+            });
+        }
+
+        [HttpPost("print_z_bill")]
+        public IActionResult PrintzBill(PrintCashParamModel request)
+        {
+            var res = _printCashHelper.PrintZReport(request);
+            return Ok(new PrintCashResponseModel
+            {
+                Status = res.Key,
+                Exception = res.Value
+            });
+        }
     }
 }

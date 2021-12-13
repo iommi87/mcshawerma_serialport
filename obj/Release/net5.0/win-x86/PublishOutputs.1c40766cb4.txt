@@ -1,8 +1,0 @@
-C:\mcshawerma_serialport\obj\Release\net5.0\win-x86\PubTmp\Out\mcshawerma_serialport.exe
-C:\mcshawerma_serialport\obj\Release\net5.0\win-x86\PubTmp\Out\appsettings.json
-C:\mcshawerma_serialport\obj\Release\net5.0\win-x86\PubTmp\Out\mcshawerma_serialport.dll
-C:\mcshawerma_serialport\obj\Release\net5.0\win-x86\PubTmp\Out\mcshawerma_serialport.deps.json
-C:\mcshawerma_serialport\obj\Release\net5.0\win-x86\PubTmp\Out\mcshawerma_serialport.runtimeconfig.json
-C:\mcshawerma_serialport\obj\Release\net5.0\win-x86\PubTmp\Out\mcshawerma_serialport.pdb
-C:\mcshawerma_serialport\obj\Release\net5.0\win-x86\PubTmp\Out\Interop.ActiveXConnect64Lib.dll
-C:\mcshawerma_serialport\obj\Release\net5.0\win-x86\PubTmp\Out\System.IO.Ports.dll

@@ -67,5 +67,11 @@ namespace McShawermaSerialPort
                 Exception = res.Value
             });
         }
+
+        [HttpPost("print_z_terminal")]
+        public IActionResult PrintzTerminal()
+        {
+            return Ok(_paymentHelper.CloseDay());
+        }
     }
 }

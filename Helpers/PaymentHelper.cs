@@ -52,5 +52,31 @@ namespace McShawermaSerialPort.Helpers
                 return new PaymentResponseModel { StatusId = -1000, StatusMessage = ex.Message };
             }
         }
+
+        public string CloseDay()
+        {
+            IngenicoAPI api = null;
+            try
+            {
+                api = new IngenicoAPI { Alias = null, HasPrinter = false };
+                if(api.CloseDay())
+                {
+                    return Transaction.Receipts.ElementAt(0);
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                if (api != null)
+                    api.DisposeAPI();
+            }
+        }
     }
 }

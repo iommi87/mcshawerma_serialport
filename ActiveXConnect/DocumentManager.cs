@@ -47,7 +47,7 @@ namespace McShawermaSerialPort.ActiveXConnect
             string pth = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "transactions\\");
             if (!Directory.Exists(pth))
                 Directory.CreateDirectory(pth);
-            File.WriteAllText(string.Concat(pth, doc.DocumentNr, ".docXml"), doc.Serialize());
+            //File.WriteAllText(string.Concat(pth, doc.DocumentNr, ".docXml"), doc.Serialize());
         }
     }
 }

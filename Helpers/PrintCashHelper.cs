@@ -61,7 +61,7 @@ namespace McShawermaSerialPort.Helpers
                     {
                         using (DaisyTech ss = new(param.ComPort))
                         {
-                            bool result = ss.Xreport();
+                            bool result = ss.Zreport();
                             if (!result)
                                 res = new KeyValuePair<bool, string>(false, ss.ErrorCOM);
                         }

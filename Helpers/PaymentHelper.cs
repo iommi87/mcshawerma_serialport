@@ -15,6 +15,8 @@ namespace McShawermaSerialPort.Helpers
                 api = new IngenicoAPI { Alias = terminal_id, HasPrinter = has_printer };
                 Transaction res = api.MakePaymentWithCurrency(amount, "981");
                 string resp_cd_hst = (res.ErrorText.Contains('-') ? res.ErrorText.Split('-').ElementAt(0) : "").Trim();
+
+                //System.IO.File.AppendAllText(System.IO.Path.Combine(Environment.CurrentDirectory, "log.txt"), res.ErrorText + "_" + resp_cd_hst + "_" + amount.ToString() + "_" + DateTime.Now.ToString("yyy-MM-dd HH:mm:ss") + Environment.NewLine);
                 return new PaymentResponseModel
                 {
                     StatusId = Convert.ToInt32(res.isAuthorized()),

@@ -2,6 +2,8 @@ using McShawermaSerialPort.Helpers;
 using McShawermaSerialPort.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.IO;
 
 namespace McShawermaSerialPort
 {
@@ -39,7 +41,7 @@ namespace McShawermaSerialPort
         public IActionResult PrintCash(PrintCashParamModel request)
         {
             var res = _printCashHelper.Print(request);
-            return Ok(new PrintCashResponseModel 
+            return Ok(new PrintCashResponseModel
             {
                 Status = res.Key,
                 Exception = res.Value

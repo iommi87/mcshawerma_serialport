@@ -1,6 +1,5 @@
 using McShawermaSerialPort.Helpers;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace McShawermaSerialPort
@@ -9,7 +8,6 @@ namespace McShawermaSerialPort
     {
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddMemoryCache();
 
             services.AddSingleton<PaymentHelper>();
@@ -19,10 +17,9 @@ namespace McShawermaSerialPort
             services.AddControllers();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app)
         {
             app.UseDeveloperExceptionPage();
-
 
             app.UseRouting();
 

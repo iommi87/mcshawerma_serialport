@@ -7,6 +7,9 @@ namespace McShawermaSerialPort.Models
 {
     public class PaymentResponseModel
     {
+        [JsonPropertyName("dt")]
+        public DateTime? dt { get; set; }
+
         [JsonPropertyName("status_id")]
         public int StatusId { get; set; }
 

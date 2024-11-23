@@ -44,10 +44,10 @@ namespace McShawermaSerialPort.ActiveXConnect
 
         public static void SaveDocument(Document doc)
         {
-            string pth = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "transactions\\");
-            if (!Directory.Exists(pth))
-                Directory.CreateDirectory(pth);
-            //File.WriteAllText(string.Concat(pth, doc.DocumentNr, ".docXml"), doc.Serialize());
+             string pth = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "transactions\\");
+             if (!Directory.Exists(pth))
+                  Directory.CreateDirectory(pth);
+              File.WriteAllText(string.Concat(pth, doc.DocumentNr, ".docXml"), doc.Serialize());
         }
     }
 }
